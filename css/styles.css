@@ -10783,12 +10783,8 @@ textarea.form-control-lg {
 
 
 .degrado {
-  /* Prefijo para navegadores más antiguos */
-  background: -webkit-linear-gradient(top, #1a54d4, #4a7df0);
-  /* Estándar */
-  background: linear-gradient(to bottom, #1a54d4, #4a7df0);
-  /* Opcional: agregar un prefijo para navegadores más antiguos */
-  /* background: -moz-linear-gradient(top, orange, yellow); */
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 @media (min-width: 1200px) {
