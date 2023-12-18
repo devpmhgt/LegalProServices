@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light btn btn-degree ">
         <div class="container px-5 px-lg-5">
-            <a class="navbar-brand text-white" href="#"><h1>LegalPro Services</h1>  </a>
+            <a class="navbar-brand text-white" href="index.html"><h1>LegalPro Services</h1></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
            
@@ -23,23 +23,13 @@
                 <ul class="navbar-nav ms-auto d-flex flex-row mt-3 mt-lg-0">
                     
                     <!-- <li class="nav-item"><a class="nav-link text-warning" href="#!"><h5>Acerca de Nosotros</h5></a></li> -->
-                    <li class="nav-item"><a class="nav-link text-warning" href="#!"><h5>Contacto <i class="bi bi-telephone"></i></h5></a> </li>
+                    <li class="nav-item"><a class="nav-link text-warning" id="CT" onclick="getID(this)"><h5>Contacto <i class="bi bi-telephone" id="CT" onclick="getID(this)"></i></h5></a> </li>
 
                 </ul> 
             </div>
         </div>
     </nav>
 
-
-    <!-- Header-->
-    
-    <!-- <header class="bg-light py-5">
-    
-            <div class="text-center text-white">
-                <h2 class="display-4 fw-bolder">Nuestros Servicios</h2>
-        
-        </div>
-    </header> -->
 
     <!-- Section-->
     <section class="py-5">
@@ -62,7 +52,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-lila mt-auto" href="#">Ver Requisitos</a></div>
+                            <div class="text-center"><a class="btn btn-lila mt-auto" id="HDE" onclick="getID(this)">Ver Requisitos</a></div>
                         </div>
                     </div>
                 </div>
@@ -92,7 +82,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" href="#">Ver Requisitos</a></div>
+                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" id="CP" onclick="getID(this)" >Ver Requisitos</a></div>
                         </div>
                     </div>
                 </div>
@@ -114,7 +104,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" href="#">Ver Requisitos</a></div>
+                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" id="AV" onclick="getID(this)" >Ver Requisitos</a></div>
                         </div>
                     </div>
                 </div>
@@ -133,7 +123,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" href="#">Ver Requisitos</a></div>
+                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" id="TV" onclick="getID(this)">Ver Requisitos</a></div>
                         </div>
                     </div>
                 </div>
@@ -152,7 +142,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" href="#">Ver Requisitos</a></div>
+                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" id="RP" onclick="getID(this)">Ver Requisitos</a></div>
                         </div>
                     </div>
                 </div>
@@ -171,7 +161,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" href="#">Ver Requisitos</a></div>
+                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" id="ARTU" onclick="getID(this)">Ver Requisitos</a></div>
                         </div>
                     </div>
                 </div>
@@ -190,7 +180,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" href="#">Ver Requisitos</a></div>
+                            <div class="text-center"><a class="btn btn-lila mt-auto mt-auto" id="FE" onclick="getID(this)">Ver Requisitos</a></div>
                         </div>
                     </div>
                 </div>
@@ -203,11 +193,11 @@
 
                         <div class="card-body p-4">
                             <div class="text-center">
-                                <h6 class="fw-bolder">ACTIVACION/DESACT DE VEHICULOS</h6>
+                                <h6 class="fw-bolder">ACTIVACION DE VEHICULOS</h6>
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-lila mt-auto" href="#">Ver Requisitos</a></div>
+                            <div class="text-center"><a class="btn btn-lila mt-auto" id="ACTV" onclick="getID(this)">Ver Requisitos</a></div>
                         </div>
                     </div>
                 </div>
@@ -225,4 +215,102 @@
     <script src="js/scripts.js"></script>
 
 
-</body></html>
+</body>
+
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header btn btn-lila">
+          <h5 class="modal-title text-white" id="TituloServicio"></h5>
+          <button type="button" class="btn btn-danger" onclick="cerrarModal()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="Cuerpo">
+        
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+<script>
+
+function getID(boton){
+    var idDelBoton = boton.id;
+    CargarServicios(idDelBoton)
+}
+
+var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
+    keyboard: false
+    })
+
+function CargarServicios(idBoton){
+
+    const dServicios = {
+        HDE: "Agencia Virtual, Nombre y giro del establecimiento, Recibo de Luz (Reciente)",
+        CP: "DPI Fisico (Buenas condiciones y VIGENTE), PDF Titulo y Tarjeta VIGENTE, RTU Actualizado, Calcomania de Circulacion VIGENTE",
+        AV: "Fotos de DPI de ambos lados (VIGENTE), Video menor a 8 segundos mostrando DPI e inidicando nombre completo y fecha",
+        CT: "Celular: 4239-5571, E-mail: avilaortegabarbara@gmail.com",
+        TV: "Actualizacion de RTU, DPI fisico (VIGENTE), PDF de Titulo y Tarjeta vigentes, Pago de Impuesto de Circulacion",
+        RP: "RTU Actualizado, DPI fisico (VIGENTE), Titulo y Tarjeta de Circulacion en PDF, Expertaje, **Denuncia ante la PNC por extravio de documentos (Titulo-Tarjeta o Ambos)**",
+        ARTU: "Agencia Virtual, Recibo de Luz reciente, Caso Especial: Fotos de DPI en caso de Reposicion Reciente",
+        FE: "Agencia Virtual, Establecimiento Activo, RTU Actualizado",
+        ACTV: "Agencia Virtual activa, RTU Actualizado, DPI fisico vigente y en buenas condiciones, Expertaje Vigente",
+        DCTV: "Denuncia por perdida ante la PNC de Titulo-Tarjeta y Placas, DPI Fisico Vigenete, RTU Actualizado",
+    };  
+
+    const dNombres ={
+        HDE: "Habilitacion de Establecimientos",
+        CP: "Cambio de Placas",
+        AV: "Agencia Virtual",
+        CT: "Contacto",
+        TV: "Traspaso de Vehiculo",
+        RP: "Reposicion de Placas",
+        ARTU: "Actualizacion de RTU",
+        FE: "Facturas Electronicas",
+        ACTV: "Activacion de Vehiculos",
+        DCTV: "Desactivacion de Vehiculos"
+    };
+
+    const dynamicContent = document.getElementById('TituloServicio');
+    dynamicContent.innerHTML = dNombres[idBoton];
+
+    var dynamicCuerpo = document.getElementById('Cuerpo')
+
+    const listaServicios= JSON.stringify(dServicios[idBoton])
+
+    const cadenaLimpia = listaServicios.replace(/["']/g,'');
+
+
+    var servicios = ['']
+    servicios = cadenaLimpia.split(",")
+
+    dynamicCuerpo.innerHTML = '';
+
+
+    servicios.forEach(function(elemento) {
+    dynamicCuerpo.innerHTML += '<ul class="list-unstyled><li class="list-group-item">'+elemento+'</li></u>'
+        
+    });
+
+    myModal.show()
+
+
+}
+
+function cerrarModal(){
+    myModal.hide()
+}
+
+
+// alert(dServicios["HDE"])
+
+
+
+</script>
+
+</html>
